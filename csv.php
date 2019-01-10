@@ -60,8 +60,7 @@ foreach($data as $key => $element){
    </head>
    <body>
    <div class="wrapper">
-        <?php
-        foreach ($artistArray as $artist): ?>
+        <?php foreach ($artistArray as $artist): ?>
             <div class="box">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/CD-ROM.png/220px-CD-ROM.png">
                 <div class="album">

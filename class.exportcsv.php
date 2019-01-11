@@ -3,7 +3,7 @@ class ExportCsv{
     var $fileName;
 
     function __construct($fileName){
-        $this->fh = fopen($fileName, 'w');
+        $this->fh = fopen($fileName, 'a');
     }
 
     function exportCsv(){

@@ -6,3 +6,8 @@
 </form>
 
 <?php
+require_once('class.exportcsv.php');
+$fileName = 'export.csv';
+
+$fileOut = new ExportCsv($fileName);
+$fileOut->exportCsv();

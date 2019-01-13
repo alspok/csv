@@ -1,7 +1,7 @@
 <?php
 class ExportCsv
 {
-    var $fileName;
+    public $fileName;
 
     function __construct($fileName)
     {

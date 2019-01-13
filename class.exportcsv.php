@@ -11,7 +11,7 @@ class ExportCsv
 
     function exportCsv($inputData)
     {
-        var_dump($inputData);
+        // var_dump($inputData);
         array_pop($inputData);
         $inputLine =  implode(',', $inputData);
 

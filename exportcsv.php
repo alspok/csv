@@ -11,7 +11,7 @@
 </html>
 
 <?php
-require('class.exportcsv.php');
+require_once('class.exportcsv.php');
 $fileName = 'export.csv';
 
 if(isset($_POST['name']) && isset($_POST['submit'])){

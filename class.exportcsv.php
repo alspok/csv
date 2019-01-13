@@ -1,13 +1,16 @@
 <?php
-class ExportCsv{
+class ExportCsv
+{
     var $fileName;
 
-    function __construct($fileName){
+    function __construct($fileName)
+    {
         $this->fileName = $fileName;
         $this->fh = fopen($this->fileName, 'a');
     }
 
-    function exportCsv($inputData){
+    function exportCsv($inputData)
+    {
         var_dump($inputData);
         array_pop($inputData);
         $inputLine =  implode(',', $inputData);

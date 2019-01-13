@@ -3,11 +3,16 @@ class ExportCsv{
     var $fileName;
 
     function __construct($fileName){
-        $this->fh = fopen($fileName, 'a');
+        $this->fileName = $fileName;
+        $this->fh = fopen($this->fileName, 'a');
     }
 
-    function exportCsv(){
-        echo '<rep>';
-        print_r($this->fh);
+    function exportCsv($inputData){
+        var_dump($inputData);
+        array_pop($inputData);
+        $inputLine =  implode(',', $inputData);
+
+        fputcsv($this->fh, explode(',', $inputLine));
+        fclose($this->fh);
     }
 }
